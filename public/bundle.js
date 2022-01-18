@@ -11,7 +11,7 @@
 /* 0 */
 /***/ (() => {
 
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXNDb250ZW50IjpbIiJdLCJmaWxlIjoiMC5qcyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///0\n");
+eval("alert(\"Hello world\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/YjYzNSJdLCJuYW1lcyI6WyJhbGVydCJdLCJtYXBwaW5ncyI6IkFBQUFBLEtBQUssQ0FBQyxhQUFELENBQUwiLCJzb3VyY2VzQ29udGVudCI6WyJhbGVydChcIkhlbGxvIHdvcmxkXCIpIl0sImZpbGUiOiIwLmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///0\n");
 
 /***/ })
 /******/ 	]);
