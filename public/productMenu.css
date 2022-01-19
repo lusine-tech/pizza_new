@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-block{
+    margin-top: 40px;
+    width: 100%;
+    height: 520px;
+    background-image: url(./image/ej3.jpg);    
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.colums-1 img{
+    width: 150px;
+    
+}
+.main-colums{
+   margin-top: 40px;
+   height: 300px;
+    color: white;
+    display: flex;
+    justify-content:space-evenly
+    
+}
+
+
+
+.cloum-1-price{
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.row-2, .row-3{
+    margin-top: 40px;
+    width: 80px;
+}
+footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+   
+
+}
