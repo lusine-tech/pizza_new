@@ -10,12 +10,29 @@
   <body>
     <div class="main-block">
       <header>
-        <div>
-          <img src="./image/2x/outline_arrow_back_white_18dp.png" alt="" />
-        </div>
-        <div>
-          <img src="./image/icons/menu/2x/outline_menu_white_24dp.png" alt="" />
-        </div>
+        <div><i class="fas fa-arrow-left"></i></div>
+         <nav >
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#">
+                <li>Home</li>
+              </a>
+              <a href="#">
+                <li>Product</li>
+              </a>
+              <a href="#">
+                <li>Basket</li>
+              </a>
+              <a href="#">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </div>
+        </nav>
       </header>
       <main>
         <div class="main-header">Պեպերոնի</div>
@@ -24,20 +41,22 @@
             <div class="peperoni">
               <img src="./image/pizzaImg/pizza2.png" alt="" />
             </div>
-            <div class="cloum-1-price">Գին՝ ֏350</div>
+            <div class="cloum-1-price"><label>Գին՝</label> <label id="gin">350</label> </div>
           </div>
           <div class="colums-2">
             <div class="row-1">Բաղադրություն</div>
-            <div class="row-2">Պանիր +/- Երշիկ ․․․</div>
-            <div class="row-3">Քանակ՝ Կտոր +/-</div>
+            <div class="row-2">Պանիր <a class="plyus"> + </a> <a class="minus"> - </a>
+            </div>
+            <div class="row-2"> Երշիկ ․․․</div>
+            <div class="row-3"> <label for="quantity">Քանակ՝ Կտոր:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="30">
+              <input  type="submit" class="confirm" value="Հաստատել"></div>
           </div>
         </div>
-
         <footer>
           <div></div>
-          <div class="button">
-            <button type="submit">Ավելացնել զամբյուղ</button>
-          </div>
+          <input type="submit" class="button" value="Ավելացնել զամբյուղ" />
+            </div>
         </footer>
       </main>
     </div>
