@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* page one start */
+
+html { 
+  background: url(img/page1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+form select {
+    padding: 10px;
+    background: #ca9903;
+  outline: none;
+    border-radius: 20px;
+   width: 200px;
+    font-size: 18px;
+    font-family: noto-sans-medium;
+    margin-bottom: 60px;
+    color: #fff;
+    min-height: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: .5s ease;
+}
+
+form input[type="submit"] {
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #77b54e;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+     transition: .5s ease;
+}
+
+
+form select:hover {
+    background-color: #ecb406;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+form .book:hover {
+    background-color: #9fcb80;
+}
+
+.triangle {
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 50px 10px 0 10px;
+border-color: #000 transparent transparent transparent;
+
+}
+/* page one start */
+
+
