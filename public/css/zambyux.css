@@ -3,12 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.body{
+/* .body{
     margin-top: 20px;
     width: 100%;
     height: 480px;
     background-image: url(../image/ej6.jpg);
-}
+} */
 header{
     display: flex;
     justify-content: space-between;

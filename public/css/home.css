@@ -5,20 +5,13 @@
 }
 
 /* page one start */
-
-html { 
-  background: url(../image/ej1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body{
+    background-image: url(../image/ej1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 10px;
-}
+
 
 form {display: flex;
     flex-direction: column;

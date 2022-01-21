@@ -6,19 +6,9 @@
 
 /* page one start */
 
-html { 
-  background: url(../image/ej1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 10px;
-}
+
+
 
 form {display: flex;
     flex-direction: column;
@@ -57,13 +47,7 @@ form input[type="submit"] {
 }
 
 
-form select:hover {
-    background-color: #ecb406;
-}
 
-select::-ms-expand {
-    display: none;
-}
 
 
 form .book:hover {

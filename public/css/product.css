@@ -8,14 +8,12 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-size:cover ;
     background-image: url(../image/ej3.jpg);
-}
+} */
 
-.container{
-        width: 1300px;
-}
+
 
 nav{
     width: 100%;
