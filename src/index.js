@@ -1,7 +1,6 @@
-import "../public/css/main.css";
 import { renderRegisterPage } from "./js/views/register";
 import router from "./js/routing";
 
-//renderRegisterPage();
+renderRegisterPage();
 
 //router.redirect("/menu");
