@@ -1,5 +1,6 @@
 import {renderChoicePage} from "../views/choice";
 import {renderProductPage} from "../views/product";
+import {renderHeaderMenu} from "../views/header-menu";
 
 export const registerEventListeners = () => {
   const table = document.querySelector("#select_table");
@@ -15,6 +16,8 @@ export const registerEventListeners = () => {
       .map((option) => option.text);
 
     renderChoicePage();
+    renderHeaderMenu();
+
     document.body.style.backgroundImage = "url('../image/ej2.jpg')";
   };
 };
