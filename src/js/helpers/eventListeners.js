@@ -2,6 +2,7 @@ import {renderChoicePage} from "../views/choice";
 import {renderProductPage} from "../views/product";
 import {renderHeaderMenu} from "../views/header-menu";
 import {renderProductMenuPage} from "../views/productMenu";
+import {renderZambyuxPage} from "../views/zumbyux";
 
 export const registerEventListeners = () => {
   const table = document.querySelector("#select_table");
@@ -27,4 +28,8 @@ export const choiceEventListeners = () => {
 };
 export const productEventListeners = () =>{
     document.querySelector("#product-items1").addEventListener("click",renderProductMenuPage);
+};
+export const productMenuEventListeners = () =>{
+    document.querySelector("#confirm").addEventListener("click",renderZambyuxPage);
 }
+ 

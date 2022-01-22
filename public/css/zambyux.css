@@ -9,7 +9,7 @@
     height: 480px;
     background-image: url(../image/ej6.jpg);
 } */
-header{
+.zambyux-head{
     display: flex;
     justify-content: space-between;
 }

@@ -1,3 +1,4 @@
+import {productMenuEventListeners} from "../helpers/eventListeners";
 const renderProductMenuPage = () => {
     const container = `   <div class="hetnamas">
     <div class="main-block">
@@ -47,7 +48,7 @@ const renderProductMenuPage = () => {
         </div>
         <footer>
           <div></div>
-          <input type="button" class="confirm" value="Ավելացնել զամբյուղ" />
+          <input type="button" class="confirm" id = "confirm" value="Ավելացնել զամբյուղ" />
             </div>
         </footer>
       </main>
@@ -55,6 +56,7 @@ const renderProductMenuPage = () => {
   </div>`;
   
     document.querySelector(".container").innerHTML = container;
+    productMenuEventListeners();
   };
   
   export { renderProductMenuPage };
