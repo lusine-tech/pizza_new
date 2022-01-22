@@ -1,4 +1,5 @@
 import {renderChoicePage} from "../views/choice";
+import {renderProductPage} from "../views/product";
 
 export const registerEventListeners = () => {
   const table = document.querySelector("#select_table");
@@ -17,4 +18,6 @@ export const registerEventListeners = () => {
     document.body.style.backgroundImage = "url('../image/ej2.jpg')";
   };
 };
-export const choiceEventListeners = () => {};
+export const choiceEventListeners = () => {
+    document.querySelector("#type_pizza").addEventListener("click",renderProductPage);
+};

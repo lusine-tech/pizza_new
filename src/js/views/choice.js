@@ -1,3 +1,5 @@
+import {choiceEventListeners} from "../helpers/eventListeners";
+
 const renderChoicePage = () => {
     const container = ` <div class="dishes">
           <div class="dishes_type">
@@ -16,7 +18,7 @@ const renderChoicePage = () => {
             <div class="dishes_type_name">Ըմպելիք</div>
           </div>
 
-          <div class="dishes_type">
+          <div class="dishes_type" id = "type_pizza">
             <div class="dishes_type_name">Պիցցաներ</div>
           </div>
 
@@ -26,7 +28,7 @@ const renderChoicePage = () => {
         </div> `;
   
     document.querySelector(".container").innerHTML = container;
-    choiceEventListeners()
+    choiceEventListeners();
   };
   
   export { renderChoicePage };
