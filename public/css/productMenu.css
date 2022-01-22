@@ -22,14 +22,6 @@ body, html {
 
   }
 
-
-/*glux*/
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-
 /*glxavor glux*/
 .main-header {
   display: flex;
