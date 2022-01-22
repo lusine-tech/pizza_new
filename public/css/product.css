@@ -15,18 +15,7 @@
 
 
 
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 
-nav i{
-    color: blue;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
 
 .fa-bars{
     color: white;

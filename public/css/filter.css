@@ -25,9 +25,7 @@ main{
     height: 480px;   
 }
 
-.filter{    
-    color: white;
-}
+
 .list, section, .datark {
     width: 23%;
     height: 70%;

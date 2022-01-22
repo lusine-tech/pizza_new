@@ -1,10 +1,7 @@
 import {productEventListeners} from "../helpers/eventListeners";
 
 const renderProductPage = () => {
-    const container = `<nav>
-    <div><i class="fas fa-arrow-left"></i></div>
-    <div><i class="fas fa-bars"></i></div>
-</nav>
+    const container = `
 <div class="container" >
     <div class="pizza">
     <div class="product-items" id = "product-items1">
