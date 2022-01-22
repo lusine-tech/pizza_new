@@ -1,6 +1,6 @@
 const renderZambyuxPage = () => {
   const container = `<div class="body">
-    <header>
+    <header class = "zambyux-head">
       <div>
         <img src="./image/2x/outline_arrow_back_white_18dp.png" alt="" />
       </div>
