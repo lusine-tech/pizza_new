@@ -15,70 +15,6 @@
   padding-bottom: 40px;
 }
 
-nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.menu i {
-  
-  top: 10px;
-  right: 50px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-section {
-  padding-top: 200px;
-}
-
-
-.burger div {
-  width: 30px;
-  height: 3px;
-  margin: 5px;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
-
-#menuToggle {
-  padding-top: 10px;
-  padding-right: 30px;
-  cursor: pointer;
-  position: relative;
-}
-
-#dropdownMenu {
-  
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   visibility: hidden;
-   
-}
-
- #dropdownMenu li {
-  list-style-type: none;
-  margin-right: 50px;
-}
-
-#dropdownMenu li a {
-
-   display: flex;
-  min-height: 40px;
-   align-items: center;
-  color: #fff;
-  text-decoration: none;
-  padding: 0px 15px;
-  width: 120px;
-  transition: .5s ease;
-}
-
- #dropdownMenu li a:hover {
-  background: rgb(71, 241, 71);
-}
 
 .dishes {
   display: grid;
@@ -106,7 +42,7 @@ section {
   background-color: rgb(224, 224, 136);
 }
 
-.dishes_type a {
+.dishes_type .dishes_type_name {
   text-decoration: none;
   color: red;
   font-size: 18px;

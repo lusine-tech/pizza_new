@@ -1,3 +1,5 @@
+import {registerEventListeners} from "../helpers/eventListeners";
+
 const renderRegisterPage = () => {
     const container = `  <div class="select">
     
@@ -19,6 +21,7 @@ const renderRegisterPage = () => {
   </div>`;
   
     document.querySelector(".container").innerHTML = container;
+    registerEventListeners();
   };
   
   export { renderRegisterPage };
