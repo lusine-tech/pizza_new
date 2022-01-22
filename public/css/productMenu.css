@@ -4,15 +4,24 @@
   box-sizing: border-box;
 }
 /* marmin*/
-/* body {
-  color: #333333;
-  font-family: "Roboto", sans-serif;
+body, html {
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
   overflow-x: hidden;
-  background-image: url(../image/ej4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-} */
+
+}
+
+  .hetnamas{
+    background-image: url(../image/ej4.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
 /*glux*/
 header {
   display: flex;
@@ -47,7 +56,7 @@ header {
   width: 184px;
 }
 .row-1 {
-  font-size: 16px;
+  font-size: 20px;
 }
 .plyus,
 .minus {
@@ -66,7 +75,7 @@ footer {
   justify-content: space-between;
   margin-top: 50px;
 }
-footer .button {
+footer .confirm {
   border-radius: 10px;
   cursor: pointer;
   background-color: #77b54e;
@@ -77,6 +86,7 @@ footer .button {
   border: none;
   transition: 0.5s ease;
   margin-top: 80px;
+
 }
 
 .peperoni {
