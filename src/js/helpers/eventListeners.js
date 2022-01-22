@@ -1,6 +1,7 @@
 import {renderChoicePage} from "../views/choice";
 import {renderProductPage} from "../views/product";
 import {renderHeaderMenu} from "../views/header-menu";
+import {renderProductMenuPage} from "../views/productMenu";
 
 export const registerEventListeners = () => {
   const table = document.querySelector("#select_table");
@@ -24,3 +25,6 @@ export const registerEventListeners = () => {
 export const choiceEventListeners = () => {
     document.querySelector("#type_pizza").addEventListener("click",renderProductPage);
 };
+export const productEventListeners = () =>{
+    document.querySelector("#product-items1").addEventListener("click",renderProductMenuPage);
+}

@@ -1,3 +1,5 @@
+import {productEventListeners} from "../helpers/eventListeners";
+
 const renderProductPage = () => {
     const container = `<nav>
     <div><i class="fas fa-arrow-left"></i></div>
@@ -5,7 +7,7 @@ const renderProductPage = () => {
 </nav>
 <div class="container" >
     <div class="pizza">
-    <div class="product-items">
+    <div class="product-items" id = "product-items1">
         <div class= "product1"> 
             <img class= "img-pizza" src="./image/pizzaImg/pizza1.png" alt="">
         </div>
@@ -66,6 +68,7 @@ const renderProductPage = () => {
 </div>`;
   
     document.querySelector(".container").innerHTML = container;
+    productEventListeners();
   };
   
   export { renderProductPage };
