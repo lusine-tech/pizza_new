@@ -54,7 +54,7 @@ footer{
     justify-content: center;
     margin-top: 40px;
 }
-button{
+.btn button{
     width: 200px;
     height: 35px;
     border: 1px solid grey;
