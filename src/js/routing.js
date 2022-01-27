@@ -3,7 +3,7 @@ import {renderRegisterPage} from "./views/register";
 import {setCookie} from "./helpers/storage";
 import {renderChoicePage} from "./views/choice";
 
-
+let router = new Router();
 
 router.addRoute("/", function () {
   renderRegisterPage();
