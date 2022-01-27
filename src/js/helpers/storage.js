@@ -6,4 +6,3 @@ export const setCookie = (name, value, expDate = 30) => {
     
 
 }
-setCookie();

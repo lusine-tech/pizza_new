@@ -4,6 +4,7 @@ import {renderHeaderMenu} from "../views/header-menu";
 import {renderProductMenuPage} from "../views/productMenu";
 import {renderZambyuxPage} from "../views/zumbyux";
 import { setCookie } from "./storage";
+import router from "../routing";
 
 export const registerEventListeners = () => {
   const table = document.querySelector("#select_table");
@@ -14,13 +15,14 @@ export const registerEventListeners = () => {
   book.onclick = (e) => {
     e.preventDefault();
 
-    const selectedValues = [].filter
+    /*const selectedValues = [].filter
       .call(table.options, (option) => option.selected)
       .map((option) => option.value);
 
-    setCookie("table", selectedValues, 30);
-    renderChoicePage();
-    renderHeaderMenu();
+    setCookie("table", selectedValues, 30);*/
+
+    router.redirect("/menu")
+    
 
     document.body.style.backgroundImage = "url('../image/ej2.jpg')";
   };
