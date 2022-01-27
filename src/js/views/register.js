@@ -3,8 +3,8 @@ import {registerEventListeners} from "../helpers/eventListeners";
 const renderRegisterPage = () => {
     const container = `  <div class="select">
     
-      <select name="table-number" id="select_table">
-        <option value="#" readonly>
+      <select name="tableNumber" id="select_table">
+        <option hidden>
           Սեղանի համարը
           
         </option>

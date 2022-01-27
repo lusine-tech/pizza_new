@@ -5,7 +5,10 @@ import { renderRegisterPage } from "./js/views/register";
 // import { renderZambyuxPage } from "./js/views/zumbyux";
 // import router from "./js/routing";
 
+import { setCookie } from "./js/helpers/storage";
+
 renderRegisterPage();
+setCookie();
 
 
   

@@ -17,6 +17,7 @@ export const registerEventListeners = () => {
       .call(table.options, (option) => option.selected)
       .map((option) => option.text);
 
+    setCookie("table", selectedValues, 30);
     renderChoicePage();
     renderHeaderMenu();
 
@@ -32,4 +33,5 @@ export const productEventListeners = () =>{
 export const productMenuEventListeners = () =>{
     document.querySelector("#confirm").addEventListener("click",renderZambyuxPage);
 }
+
  
