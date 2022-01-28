@@ -11,6 +11,7 @@ import { setCookie } from "./js/helpers/storage";
 
 //router.redirect("/");
 let hash = window.location.hash;
+
 let hashString = hash.indexOf("#")>=0 ? hash.split("#")[1]:"/";
 
 router.redirect(hashString);

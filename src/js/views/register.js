@@ -4,10 +4,7 @@ const renderRegisterPage = () => {
     const container = `  <div class="select">
     
       <select name="tableNumber" id="select_table">
-        <option hidden>
-          Սեղանի համարը
-          
-        </option>
+        <option hidden>Սեղանի համարը</option>
         <option id = "table-1" value="1">սեղան 1</option>
         <option id = "table-2" value="2">սեղան 2</option>
         <option id = "table-3" value="3">սեղան 3</option>

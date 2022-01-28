@@ -11,7 +11,7 @@ router.addRoute("/", function () {
 });
 
 router.addRoute("/menu", function () {
-  debugger
+  
   renderChoicePage();
   // renderHeaderMenu();
 });
