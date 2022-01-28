@@ -28,7 +28,14 @@ export const registerEventListeners = () => {
   };
 };
 export const choiceEventListeners = () => {
-    document.querySelector("#type_pizza").addEventListener("click",renderProductPage);
+    document.querySelectorAll(".dishes_type").forEach( function(element) { 
+          element.addEventListener("click",function(){
+        console.log(this)
+        console.log(this.id)
+        // renderProductPage();
+        router.redirect(`/menu/${this.id}`)
+      });
+    });
 }; 
 export const productEventListeners = () =>{
     document.querySelector("#product-items1").addEventListener("click",renderProductMenuPage);
