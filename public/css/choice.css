@@ -7,12 +7,18 @@
 /* page two start */
 
 
-.container {
+.containerOfDishes {
   display: grid;
   justify-content: center;
   align-content: center;
   column-gap: 50px;
   padding-bottom: 40px;
+  background-image:url(../image/ej2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
 }
 
 
