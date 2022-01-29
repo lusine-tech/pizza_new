@@ -4,12 +4,17 @@ import {setCookie} from "./helpers/storage";
 import {renderChoicePage} from "./views/choice";
 import {renderProductPage} from "./views/product";
 import {renderHeaderMenu} from "./views/header-menu";
+import {renderProductMenuPage} from "./views/productMenu";
+import { renderZambyuxPage } from "./views/zumbyux.js";
 let router = new Router();
 
 router.addRoute("/", function () {
   renderRegisterPage();
 
 });
+router.addRoute("/basket", function (){
+  renderZambyuxPage();
+})
 
 router.addRoute("/menu", function () {
   
@@ -19,8 +24,15 @@ router.addRoute("/menu", function () {
 
 router.addRoute("/menu/:product", function (event) {
   // ...
+  debugger
   console.log(event.params);
   renderProductPage(event.params.product);
 });
+
+
+router.addRoute("/menu/:product/:item",function (event){
+  console.log(event.params);
+  renderProductMenuPage()
+})
 
 export default router;

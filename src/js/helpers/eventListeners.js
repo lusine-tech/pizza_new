@@ -22,6 +22,7 @@ export const registerEventListeners = () => {
     let sel = Number(selectedValues[0]);
 
     if (typeof sel === "number" && !isNaN(sel)) {
+      setCookie("table",sel)
       router.redirect("/menu");
       document.body.style.backgroundImage = "url('../image/ej2.jpg')";
     } else {
@@ -34,19 +35,26 @@ export const choiceEventListeners = () => {
     element.addEventListener("click", function () {
       // console.log(this);
       // console.log(this.id);
-      debugger;
+     
       
       router.redirect(`/menu/${this.id}`);
     });
   });
 };
-export const productEventListeners = () => {
-  document
-    .querySelector("#product-items1")
-    .addEventListener("click", renderProductMenuPage);
+export const productEventListeners = (productType) => {
+  document.querySelectorAll(".product-items").forEach(function(element){
+    console.log("element=",element)
+    element.addEventListener("click",function (){
+      debugger
+      console.log(this)
+      router.redirect(`/menu/${productType}/${this.id}`);
+    })
+  })
+  
 };
 export const productMenuEventListeners = () => {
-  document
-    .querySelector("#confirm")
-    .addEventListener("click", renderZambyuxPage);
+  // document
+  //   .querySelector("#confirm")
+  //   .addEventListener("click", renderZambyuxPage);
+  router.redirect("/basket")
 };

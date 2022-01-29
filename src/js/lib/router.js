@@ -91,6 +91,7 @@ class RouterEvent {
      * @param  {Object} params replace params in path
      */
     redirect(path, params = {}) {
+      debugger
       path = path.replace(/#/g, "");
   
       path = `#${path}`.replace(
