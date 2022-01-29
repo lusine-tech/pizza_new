@@ -1,9 +1,11 @@
 import {productEventListeners} from "../helpers/eventListeners";
 
-const renderProductPage = () => {
-    const container = `
+const renderProductPage = (productType) => {
+   let container =`${productType}`;
+   container +=`
 <div class="container" >
     <div class="pizza">
+
     <div class="product-items" id = "product-items1">
         <div class= "product1"> 
             <img class= "img-pizza" src="./image/pizzaImg/pizza1.png" alt="">

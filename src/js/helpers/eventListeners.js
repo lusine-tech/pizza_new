@@ -34,6 +34,7 @@ export const choiceEventListeners = () => {
     element.addEventListener("click", function () {
       console.log(this);
       console.log(this.id);
+      debugger;
       // renderProductPage();
       router.redirect(`/menu/${this.id}`);
     });

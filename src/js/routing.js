@@ -16,9 +16,10 @@ router.addRoute("/menu", function () {
   // renderHeaderMenu();
 });
 
-router.addRoute("/menu/:product", function () {
+router.addRoute("/menu/:product", function (event) {
   // ...
-  renderProductPage();
+  console.log(event.params);
+  renderProductPage(event.params.product);
 });
 
 export default router;
