@@ -4,28 +4,7 @@ const renderProductMenuPage = () => {
     <div class="main-block">
       <header>
         <div><i class="fas fa-arrow-left"></i></div>
-         <!-- <nav role='navigation'>
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <a href="#">
-                <li>Home</li>
-              </a>
-              <a href="#">
-                <li>Product</li>
-              </a>
-              <a href="#">
-                <li>Basket</li>
-              </a>
-              <a href="#">
-                <li>Contact</li>
-              </a>
-            </ul>
-          </div>
-        </nav> -->
+      
       </header>
       <main>
         <div class="main-header">Պեպերոնի</div>
@@ -48,7 +27,7 @@ const renderProductMenuPage = () => {
         </div>
         <footer>
           <div></div>
-          <input type="button" class="confirm" id = "confirm" value="Ավելացնել զամբյուղ" />
+          <input type="button" class="confirmbtn" id = "confirm" value="Ավելացնել զամբյուղ" />
             </div>
         </footer>
       </main>
