@@ -32,10 +32,10 @@ export const registerEventListeners = () => {
 export const choiceEventListeners = () => {
   document.querySelectorAll(".dishes_type").forEach(function (element) {
     element.addEventListener("click", function () {
-      console.log(this);
-      console.log(this.id);
+      // console.log(this);
+      // console.log(this.id);
       debugger;
-      // renderProductPage();
+      
       router.redirect(`/menu/${this.id}`);
     });
   });
