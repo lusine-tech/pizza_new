@@ -52,9 +52,9 @@ footer{
 .button-main{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 85px;
 }
-.btn button{
+.button button{
     width: 200px;
     height: 35px;
     border: 1px solid grey;
