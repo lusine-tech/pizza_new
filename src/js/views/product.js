@@ -1,4 +1,7 @@
-import { productEventListeners } from "../helpers/eventListeners";
+
+import {productEventListeners} from "../helpers/eventListeners";
+import { HOST } from "../helpers/constants";
+
 
 const renderProductPage = (productType) => {
   let container = `

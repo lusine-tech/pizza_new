@@ -8,17 +8,15 @@ const renderHeaderMenu = () => {
 			<span></span>
 			<ul id="menu">
 				<a class="menu-link" href="#">
-					<li>Սեղանի համար</li>
+					<li>Table</li>
 				</a>
 				<a class="menu-link"href="#">
-					<li>Portfolio</li>
+					<li>Basket</li>
 				</a>
 				<a class="menu-link"href="#">
-					<li>About</li>
+					<li>Cancel</li>
 				</a>
-				<a class="menu-link" href="#">
-					<li>Contact</li>
-				</a>
+				
 			</ul>
 		</div>
 	</nav>`;

@@ -50,8 +50,20 @@ export const productEventListeners = (productType) => {
   });
 };
 export const productMenuEventListeners = () => {
-  // document
+  document.querySelector(".confirm").addEventListener("click", function () {
+    const prodObj = {
+      productId: "",
+      quantity: 2,
+    };
+  });
   //   .querySelector("#confirm")
   //   .addEventListener("click", renderZambyuxPage);
+
   // router.redirect("/basket")
+
+  /*const prodObj = {
+   productId: "fsdfsdfdsf",
+   quantity: 2,
+ };
+ State.basket.push(prodObj);*/
 };
