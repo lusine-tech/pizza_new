@@ -1,4 +1,7 @@
 import {choiceEventListeners} from "../helpers/eventListeners";
+import {State} from "../model";
+
+
 
 const renderChoicePage = () => {
     const container = ` <div class="dishes">
@@ -27,6 +30,7 @@ const renderChoicePage = () => {
           </div>
         </div> `;
   
+       console.log(State);
     document.querySelector(".container").innerHTML = container;
     choiceEventListeners();
   };

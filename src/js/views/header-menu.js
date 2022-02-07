@@ -8,7 +8,7 @@ const renderHeaderMenu = () => {
 			<span></span>
 			<ul id="menu">
 				<a class="menu-link" href="#">
-					<li>Home</li>
+					<li>Սեղանի համար</li>
 				</a>
 				<a class="menu-link"href="#">
 					<li>Portfolio</li>

@@ -32,7 +32,7 @@ router.addRoute("/menu/:product", function (event) {
 
 router.addRoute("/menu/:product/:item",function (event){
   console.log(event.params);
-  renderProductMenuPage()
+  renderProductMenuPage(event.params);
 })
 
 export default router;

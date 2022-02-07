@@ -56,5 +56,5 @@ export const productMenuEventListeners = () => {
   // document
   //   .querySelector("#confirm")
   //   .addEventListener("click", renderZambyuxPage);
-  router.redirect("/basket")
+ // router.redirect("/basket")
 };
