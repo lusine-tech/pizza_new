@@ -12,9 +12,7 @@ router.addRoute("/", function () {
   renderRegisterPage();
 
 });
-router.addRoute("/basket", function (){
-  renderZambyuxPage();
-})
+
 
 router.addRoute("/menu", function () {
   
@@ -24,7 +22,7 @@ router.addRoute("/menu", function () {
 
 router.addRoute("/menu/:product", function (event) {
   // ...
-  debugger
+  
   console.log(event.params);
   renderProductPage(event.params.product);
 });
@@ -33,6 +31,9 @@ router.addRoute("/menu/:product", function (event) {
 router.addRoute("/menu/:product/:item",function (event){
   console.log(event.params);
   renderProductMenuPage(event.params);
+})
+router.addRoute("/basket", function (){
+  renderZambyuxPage();
 })
 
 export default router;

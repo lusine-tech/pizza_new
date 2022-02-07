@@ -22,39 +22,36 @@ export const registerEventListeners = () => {
     let sel = Number(selectedValues[0]);
 
     if (typeof sel === "number" && !isNaN(sel)) {
-      setCookie("table",sel)
+      setCookie("table", sel);
       router.redirect("/menu");
       document.body.style.backgroundImage = "url('../image/ej2.jpg')";
     } else {
       alert("please choose number of table");
     }
-  }
+  };
 };
 export const choiceEventListeners = () => {
   document.querySelectorAll(".dishes_type").forEach(function (element) {
     element.addEventListener("click", function () {
       // console.log(this);
       // console.log(this.id);
-     
-      
+
       router.redirect(`/menu/${this.id}`);
     });
   });
 };
 export const productEventListeners = (productType) => {
-  document.querySelectorAll(".product-items").forEach(function(element){
-    console.log("element=",element)
-    element.addEventListener("click",function (){
-      debugger
-      console.log(this)
+  document.querySelectorAll(".product-items").forEach(function (element) {
+    //console.log("element=",element)
+    element.addEventListener("click", function () {
+      //console.log(this)
       router.redirect(`/menu/${productType}/${this.id}`);
-    })
-  })
-  
+    });
+  });
 };
 export const productMenuEventListeners = () => {
   // document
   //   .querySelector("#confirm")
   //   .addEventListener("click", renderZambyuxPage);
- // router.redirect("/basket")
+  // router.redirect("/basket")
 };
