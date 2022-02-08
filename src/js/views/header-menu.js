@@ -1,3 +1,5 @@
+import {headerMenuEventListeners} from "../helpers/eventListeners"
+
 const renderHeaderMenu = () => {
   const container = `<nav role='navigation'>
 		<div id="backArrow"><i class="fas fa-arrow-left"></i><div>
@@ -7,14 +9,14 @@ const renderHeaderMenu = () => {
 			<span></span>
 			<span></span>
 			<ul id="menu">
-				<a class="menu-link" href="#">
-					<li>Table</li>
+				<a class="menu-link" >
+					<li class="menu-table">Table</li>
 				</a>
-				<a class="menu-link"href="#">
-					<li>Basket</li>
+				<a class="menu-link">
+					<li class="menu-basket">Basket</li>
 				</a>
-				<a class="menu-link"href="#">
-					<li>Cancel</li>
+				<a class="menu-link">
+					<li class="menu-cancel">Cancel</li>
 				</a>
 				
 			</ul>
@@ -22,6 +24,7 @@ const renderHeaderMenu = () => {
 	</nav>`;
 
   document.querySelector(".header-menu").innerHTML = container;
+  headerMenuEventListeners();
 };
 
 export { renderHeaderMenu };

@@ -1,4 +1,5 @@
 import { registerEventListeners } from "../helpers/eventListeners";
+import {headerMenuEventListeners} from "../helpers/eventListeners"
 
 const renderRegisterPage = () => {
   const container = `  <div class="select">

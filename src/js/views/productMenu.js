@@ -4,6 +4,7 @@ import {
 import {
   HOST
 } from "../helpers/constants";
+import { headerMenuEventListeners } from "../helpers/eventListeners";
 
 const renderProductMenuPage = (params) => {
 
@@ -39,7 +40,7 @@ const renderProductMenuPage = (params) => {
           container += `
             <div class="row-3"> <label for="quantity">Քանակ՝ Կտոր:</label>
               <input type="number" id="quantity" name="quantity" min="1" max="30">
-              <input  type="submit" class="confirm" value="Հաստատել"></div>
+              </div>
           </div>
         </div>
         <footer>
@@ -52,7 +53,7 @@ const renderProductMenuPage = (params) => {
   </div>`;
 
     document.querySelector(".container").innerHTML = container;
-    productMenuEventListeners()
+    productMenuEventListeners(data)
   });
 };
 
@@ -60,6 +61,3 @@ export {
   renderProductMenuPage
 };
 
-/*<div class="row-2">Պանիր <a class="plyus"> + </a> <a class="minus"> - </a>
-            </div>
-            <div class="row-2"> Երշիկ ․․․</div>*/

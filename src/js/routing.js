@@ -32,7 +32,9 @@ router.addRoute("/menu/:product/:item",function (event){
   console.log(event.params);
   renderProductMenuPage(event.params);
 })
+
 router.addRoute("/basket", function (){
+  console.log("and");
   renderZambyuxPage();
 })
 

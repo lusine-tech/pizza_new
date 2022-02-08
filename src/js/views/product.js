@@ -1,5 +1,6 @@
 
 import {productEventListeners} from "../helpers/eventListeners";
+import { headerMenuEventListeners } from "../helpers/eventListeners";
 import { HOST } from "../helpers/constants";
 
 

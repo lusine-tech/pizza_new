@@ -1,10 +1,29 @@
-import { renderChoicePage } from "../views/choice";
-import { renderProductPage } from "../views/product";
-import { renderHeaderMenu } from "../views/header-menu";
-import { renderProductMenuPage } from "../views/productMenu";
-import { renderZambyuxPage } from "../views/zumbyux";
-import { setCookie } from "./storage";
+import {
+  renderChoicePage
+} from "../views/choice";
+import {
+  renderProductPage
+} from "../views/product";
+import {
+  renderHeaderMenu
+} from "../views/header-menu";
+import {
+  renderProductMenuPage
+} from "../views/productMenu";
+import {
+  renderZambyuxPage
+} from "../views/zumbyux";
+import {
+  setCookie
+} from "./storage";
 import router from "../routing";
+import {
+  State
+} from "../model";
+import {
+  deleteCookie
+} from "./storage";
+
 
 export const registerEventListeners = () => {
   const table = document.querySelector("#select_table");
@@ -49,21 +68,52 @@ export const productEventListeners = (productType) => {
     });
   });
 };
-export const productMenuEventListeners = () => {
-  document.querySelector(".confirm").addEventListener("click", function () {
+export const productMenuEventListeners = (data) => {
+  console.log(data, "productMenuEventListeners");
+  document.querySelector("#confirm").addEventListener("click", function () {
+    console.log(document.getElementById("quantity"));
+    console.log(document.getElementById("quantity").value);
     const prodObj = {
-      productId: "",
-      quantity: 2,
+      ...data,
+      quantity: document.getElementById('quantity').value
     };
+
+    State.basket.push(prodObj);
+    console.log("prodObj.quantity", prodObj.quantity);
+    router.redirect(`/basket`)
   });
-  //   .querySelector("#confirm")
-  //   .addEventListener("click", renderZambyuxPage);
 
-  // router.redirect("/basket")
-
-  /*const prodObj = {
-   productId: "fsdfsdfdsf",
-   quantity: 2,
- };
- State.basket.push(prodObj);*/
 };
+
+export const headerMenuEventListeners = () => {
+  console.log("headerMenuEventListeners")
+if (document.querySelector(".menu-table")) {
+  document.querySelector(".menu-table").addEventListener("click", function () {
+      router.redirect(`/`);
+  });
+}
+debugger
+console.log(document.querySelector(".menu-basket"));
+if (document.querySelector(".menu-basket")) {
+ console.log("if")
+  document.querySelector(".menu-basket").addEventListener("click", function () {
+    debugger
+    router.redirect(`/basket`);
+  });
+}
+
+if (document.querySelector(".menu-cancel")) {
+  document.querySelector(".menu-cancel").addEventListener("click", function () {
+    deleteCookie("table");
+    router.redirect(`/`);
+  });
+}
+
+ 
+}
+
+export const confirmOrder = () => {
+  document.querySelector(".confirmOrder").addEventListener("click", function () {
+     router.redirect(`/`);
+  });
+}
